@@ -124,7 +124,7 @@ graph, max_depth = unroll_petri_net(petri_net, numberOfBanks)
 
 ### Command Sequence Exploration (Timed)
 
-The `explore_next_transitions` and `explore_next_transitions_new` functions generate k-step command sequences:
+The `explore_next_transitions_new` function generates k-step command sequences:
 
 ```python
 from drampyml.algorithms.transitions import explore_next_transitions_new
