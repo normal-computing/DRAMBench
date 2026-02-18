@@ -1,0 +1,16 @@
+HBM2=[
+    "RNOP",
+    "ACT",
+    "PRE",
+    "PREA",
+    "REFSB",
+    "REF",
+    "PDE",
+    "PDX",
+    "SRE",
+    "SRX",
+    "RD",
+    "RDA",
+    "WR",
+    "WRA",
+]

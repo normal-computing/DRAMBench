@@ -1,0 +1,14 @@
+DDR3=[
+    "ACT",
+    "RD",
+    "WR",
+    "RDA",
+    "WRA",
+    "PRE",
+    "PREA",
+    "REF",
+    "PDE",
+    "PDX",
+    "SRE",
+    "SRX",
+]
