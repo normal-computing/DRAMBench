@@ -1,0 +1,18 @@
+LPDDR3=[
+    "ACT",
+    "RD",
+    "WR",
+    "RDA",
+    "WRA",
+    "PR",
+    "PRA",
+    "REFPB",
+    "REFAB",
+    "PD",
+    "PDX",
+    "SREF",
+    "SREFX",
+    "DPD",
+    "DPDX",
+    "RESET",
+]

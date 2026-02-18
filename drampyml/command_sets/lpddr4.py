@@ -1,0 +1,17 @@
+LPDDR4=[
+    "ACT",
+    "RD",
+    "WR",
+    "RDA",
+    "WRA",
+    "WR32",
+    "WRA32",
+    "PRE",
+    "PREA",
+    "REFAB",
+    "REFPB",
+    "PDE",
+    "PDX",
+    "SRE",
+    "SRX",
+]

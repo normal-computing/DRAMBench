@@ -1,0 +1,18 @@
+LPDDR2_S2=[
+    "ACT",
+    "RD",
+    "WR",
+    "RDA",
+    "WRA",
+    "PR",
+    "PRA",
+    "REFAB",
+    "REFPB",
+    "PD",
+    "PDX",
+    "SREF",
+    "SREFX",
+    "DPD",
+    "DPDX",
+    "RESET",
+]

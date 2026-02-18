@@ -1,0 +1,25 @@
+"""DDR2 timing parameters."""
+
+DDR2 = {
+    "tCCD": 4,
+    "tPD": 3,
+    "tRAS": 28,
+    "tRC": 38,
+    "tRCD": 10,
+    "tRFC": 88,
+    "tRL": 10,
+    "tRP": 10,
+    "tRRD": 5,
+    "tRTP": 6,
+    "tFAW": 24,
+    "tWL": 8,
+    "tRTRS": 1,
+    "tWR": 12,
+    "tAL": 0,
+    "tWTR": 6,
+    "tXP": 6,
+    "tCK": 1,
+    "tXSNR": 2,
+    "tXSRD": 200,
+    "tXARD": 2,
+}

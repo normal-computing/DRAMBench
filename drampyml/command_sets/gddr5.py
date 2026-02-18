@@ -1,0 +1,17 @@
+GDDR5=[
+    "ACT",
+    "PDEA",
+    "PDEP",
+    "PDXA",
+    "PDXP",
+    "PREA",
+    "REFA",
+    "SREFEN",
+    "SREFEX",
+    "PRE",
+    "RD",
+    "RDA",
+    "WR",
+    "WRA",
+    "REFB",
+]

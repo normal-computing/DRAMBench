@@ -1,0 +1,28 @@
+"""LPDDR2 timing parameters."""
+
+LPDDR2 = {
+    "tCCD": 4,
+    "tCKE": 3,
+    "tCKESR": 4,
+    "tRAS": 28,
+    "tRC": 38,
+    "tRCD": 10,
+    "tRFCpb": 75,
+    "tRFCab": 170,
+    "tRL": 8,
+    "tRPab": 10,
+    "tRPpb": 10,
+    "tRRD": 5,
+    "tRTP": 6,
+    "tFAW": 24,
+    "tWL": 4,
+    "tRTRS": 1,
+    "tWR": 12,
+    "tWTR": 6,
+    "tXP": 6,
+    "tCK": 1,
+    "tXSR": 180,
+    "tINIT3": 200,
+    "tDPD": 1000,
+    "tDQSCK": 3,
+}
