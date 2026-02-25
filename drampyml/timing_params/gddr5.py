@@ -1,3 +1,5 @@
+"""GDDR5 timing parameters."""
+
 GDDR5= {
     "tRAS": 36,
     "tRCDRD": 12,
@@ -16,13 +18,13 @@ GDDR5= {
     "tRRDS": 2,
     "tPD": 6,
     "tXPN": 8,
-    "tRDSRE": 1,
+    "tRDSRE": 16,
     "tCCDS": 2,
     "tRFC": 600,
-    "tCKE": 1,
+    "tCKE": 3,
     "tLK": 10,
     "tXS": 20,
-    "tWRSRE": 2,
+    "tWRSRE": 16,
     "tWRRD_S": 2,
     "tWRRD_R": 2,
     "tRDWR_R": 12,
