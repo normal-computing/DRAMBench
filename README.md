@@ -124,13 +124,13 @@ graph, max_depth = unroll_petri_net(petri_net, numberOfBanks)
 
 ### Command Sequence Exploration (Timed)
 
-The `explore_next_transitions_new` function generates k-step command sequences:
+The `explore_next_transitions` function generates k-step command sequences:
 
 ```python
-from drampyml.algorithms.transitions import explore_next_transitions_new
+from drampyml.algorithms.transitions import explore_next_transitions
 
 # Generate all valid k-step command sequences with timing information
-paths = explore_next_transitions_new(
+paths = explore_next_transitions(
     petri_net,
     k_max=5,
     include_timings=True
@@ -258,13 +258,13 @@ pip install -e .
 ```python
 from drampyml.standards.ddr3 import ddr3
 from drampyml.memspecs.ddr3 import DDR3_1600
-from drampyml.algorithms.transitions import explore_next_transitions_new
+from drampyml.algorithms.transitions import explore_next_transitions
 
 # Create DDR3 Petri net
 petri_net = ddr3(DDR3_1600)
 
 # Generate all valid 4-step command sequences with timing
-paths = explore_next_transitions_new(
+paths = explore_next_transitions(
     petri_net,
     k_max=4,
     include_timings=True
