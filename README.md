@@ -2,7 +2,7 @@
 
 **A Formal Modeling Framework for JEDEC DRAM Standards using Timed Petri Nets**
 
-DRAMpyML is a modeling approach for DRAM standards using timed Petri nets, developed by **Fraunhofer IESE** and **Normal Computing**. It addresses the challenges emerging from formalizing increasingly complex DRAM protocols defined in JEDEC standards (DDR2-4, LPDDR2-4, GDDR5-6, HBM2-3).
+DRAMpyML is a modeling approach for DRAM standards using timed Petri nets, developed by **Fraunhofer IESE** and **Normal Computing**. It addresses the challenges emerging from formalizing increasingly complex DRAM protocols defined in JEDEC standards (DDR2-4, LPDDR2-4, GDDR5-6, HBM2).
 
 Like DRAMml, DRAMpyML uses timed Petri nets to capture structure and constraints. Unlike DRAMml, DRAMpyML leverages Python for greater flexibility and direct executability, further pushing adoption amongst industry practitioneers.
 
@@ -19,7 +19,7 @@ Like DRAMml, DRAMpyML uses timed Petri nets to capture structure and constraints
 
 DRAMpyML releases ground truth Petri nets for **all but the newest JEDEC standards** to avoid polluting auto-formalization benchmarks with data that could be used to train models on recent standards. This ensures that:
 
-- Older standards (DDR2, DDR3, early DDR4, LPDDR2/3, etc.) serve as reliable ground truth for benchmarking
+- Older standards serve as reliable ground truth for benchmarking
 - Newer standard implementations are withheld temporarily to preserve their value as evaluation targets
 - All models will eventually be released as standards mature and newer versions emerge
 
