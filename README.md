@@ -300,10 +300,11 @@ Visualization features:
 
 ## References
 
-1. **DRAMpyML**
+1. **DRAMPyML: A Formal Description of DRAM Protocols with Timed Petri Nets** Christ et. al., DV-Con Europe 2026
    [https://arxiv.org/abs/2602.10654](https://arxiv.org/abs/2602.10654)
+2. **A Formal Description of Communication Protocols Using Petri-Nets** Ernst et. al., MBMV 2026
+3. **Autoformalizing Memory Device Specifications using Agents** Ernst et. al., (Forthcoming)
 
-2. **Autoformalizing Memory Device Specifications using Agents** (Forthcoming)
 
 ## Contributing
 
