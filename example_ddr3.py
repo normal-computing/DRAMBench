@@ -10,10 +10,7 @@ Demonstrates:
 
 from drampyml.standards.ddr3 import create_standard
 from drampyml.memspecs.ddr3 import DDR3_1600
-from drampyml.algorithms.transitions import (
-    explore_next_transitions_new,
-    print_compact_paths,
-)
+from drampyml.algorithms.transitions import explore_next_transitions
 from drampyml.algorithms.state import current_state, restore_state
 
 
@@ -61,10 +58,9 @@ def main():
     initial = current_state(petri_net)
 
     petri_net.ignore_timing_constraints = True
-    untimed_paths = explore_next_transitions_new(petri_net, k_max=3, include_timings=False)
+    untimed_paths = explore_next_transitions(petri_net, k_max=3, include_timings=False)
 
     print(f"    Found {len(untimed_paths)} sequences (k=3)\n")
-    print_compact_paths(untimed_paths, max_display=20)
 
     petri_net.ignore_timing_constraints = False
     restore_state(petri_net, initial)
@@ -75,23 +71,11 @@ def main():
     print("\n" + "=" * 80)
     print("[4] Timed Command Sequences (Fixed)")
     print("=" * 80)
-    print("\n    Note: Uses explore_next_transitions_new() with time advancement\n")
+    print("\n    Note: Uses explore_next_transitions() with time advancement\n")
 
-    timed_paths = explore_next_transitions_new(petri_net, k_max=3, include_timings=True)
+    timed_paths = explore_next_transitions(petri_net, k_max=3, include_timings=True)
 
     print(f"    Found {len(timed_paths)} sequences (k=3)\n")
-
-    if len(timed_paths) > 0:
-        print_compact_paths(timed_paths, max_display=20)
-    else:
-        print("    No timed paths found for k=3. Trying k=2...\n")
-        timed_k2 = explore_next_transitions_new(petri_net, k_max=2, include_timings=True)
-        print(f"    Found {len(timed_k2)} sequences (k=2)\n")
-        if timed_k2:
-            for i, path in enumerate(list(timed_k2)[:10], 1):
-                parts = [str(ct.command) if j == 0 else f"[{ct.timing}] {ct.command}"
-                         for j, ct in enumerate(path)]
-                print(f"    {i:2d}. {' -> '.join(parts)}")
 
     restore_state(petri_net, initial)
 
@@ -158,10 +142,6 @@ Results:
   - Untimed sequences: {len(untimed_paths)}
   - Timed sequences:   {len(timed_paths)}
   - SVG files: ddr3_initial.svg, ddr3_after_act.svg
-
-Key Functions:
-  - explore_next_transitions_new()   : Original (finds 0 timed for k>1)
-  - explore_next_transitions_new() : Fixed (advances time, finds {len(timed_paths)} for k=3)
 
 DDR3 Commands:
   ACT  - Activate row
