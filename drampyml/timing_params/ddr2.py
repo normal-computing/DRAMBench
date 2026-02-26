@@ -2,9 +2,7 @@
 
 DDR2 = {
     "tCCD": 4,
-    "tCKE": 3,
     "tPD": 3,
-    "tCKESR": 4,
     "tRAS": 28,
     "tRC": 38,
     "tRCD": 10,
@@ -20,11 +18,6 @@ DDR2 = {
     "tAL": 0,
     "tWTR": 6,
     "tXP": 6,
-    "tXS": 96,
-    "tXSDLL": 512,
-    "tACTPDEN": 1,
-    "tPRPDEN": 1,
-    "tREFPDEN": 1,
     "tCK": 1,
     "tXSNR": 2,
     "tXSRD": 200,
