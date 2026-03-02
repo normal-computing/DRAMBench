@@ -2,7 +2,7 @@ from drampyml.components.petri_net import PetriNet
 from drampyml.algorithms.transitions import explore_next_transitions
 
 
-def jaccard_index(fm_a: PetriNet, fm_b: PetriNet, k_max: int = 3) -> float:
+def jaccard_index(fm_a: PetriNet, fm_b: PetriNet, k_max: int = 4) -> float:
     """Computes the Jaccard index to measure the similarity between two
     `PetriNets`, checking sequences up to length `k_max`."""
     sequences_a = explore_next_transitions(fm_a, k_max)
