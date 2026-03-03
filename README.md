@@ -303,7 +303,7 @@ Visualization features:
 1. **DRAMPyML: A Formal Description of DRAM Protocols with Timed Petri Nets** Christ et. al., DV-Con Europe 2026
    [https://arxiv.org/abs/2602.10654](https://arxiv.org/abs/2602.10654)
 2. **A Formal Description of Communication Protocols Using Petri-Nets** Ernst et. al., MBMV 2026
-3. **Autoformalizing Memory Device Specifications using Agents** Ernst et. al., (Forthcoming)
+3. **Autoformalizing Memory Device Specifications using Agents** Ernst et. al., ICRL VerifAI Workshop 2026
 
 
 ## Contributing
@@ -312,7 +312,7 @@ Contributions are welcome! Please open issues or pull requests on the GitHub rep
 
 ## License
 
-[What should our license be?]
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
